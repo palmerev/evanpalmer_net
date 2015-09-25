@@ -6,11 +6,12 @@
 }
 
 body {
-  background-color: #0560CD;
+  background-color: #055068;
 }
 
 header{
   background-color: #FFFFFF;
+  margin-bottom: 30px;
 }
 
 main {
@@ -18,29 +19,48 @@ main {
   width: 50%;
   min-width: 400px;
   background-color: #777777;
+  vertical-align: top;
 }
 
 aside {
   display: inline-block;
-  background-color: #11AAAA;
+  background: linear-gradient(to right, #EFEFEF, #FFF);
   border: 3px dashed #0050BB;
-  width: 25%;
+  width: 20%;
   min-width: 150px;
+  vertical-align: top;
 }
 
 nav {
   display: inline-block;
-  background-color: #AADDAA;
+  width: 20%;
+  min-width: 150px;
   verticle-align: top;
+}
+
+nav > div {
+  padding: 15px 0px 15px 30px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: #DDBF00;
+  font-weight: bold;
+  /* starts in top-left */
+  border-radius: 10px 25px 10px 25px;
 }
 
 img {
   display: inline-block;
+  margin: 0 auto;
   height: 110px;
   border-radius: 50%;
 }
 
 .bio-image-wrapper {
   display: inline-block;
-  background-color: #AA60FF;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+a {
+  text-decoration: none;
 }
