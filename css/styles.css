@@ -5,32 +5,49 @@
   font-family: 'PT Sans', sans-serif;
 }
 
-body {
-  background-color: #055068;
-}
-
 header{
   background-color: #FFFFFF;
-  margin-bottom: 30px;
+  padding: 15px;
+}
+
+.preamble {
+  background-color: #055068;
+  height: 500px;
+  padding: 30px;
+}
+
+main, aside {
+  background: linear-gradient(to bottom right, #355555, #204050);
+  background-color: #355555;
+  color: #DDD;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #456565 #204050 #204050 #456565;
 }
 
 main {
   display: inline-block;
   width: 50%;
   min-width: 400px;
-  background-color: #777777;
   vertical-align: top;
+  margin: 0 25px;
+  padding: 10px;
+  font-size: 1.25em;
 }
 
 aside {
   display: inline-block;
-  background: linear-gradient(to right, #EFEFEF, #FFF);
-  border: 3px dashed #0050BB;
-  width: 20%;
+  border-top: 5px solid #DDBF00;
+  width: 25%;
   min-width: 150px;
   vertical-align: top;
 }
 
+aside > p {
+  padding: 12px;
+  text-align: left;
+  text-indent: 2em;
+}
 nav {
   display: inline-block;
   width: 20%;
@@ -43,22 +60,25 @@ nav > div {
   margin-bottom: 10px;
   color: white;
   background-color: #DDBF00;
+  font-size: 1.25em;
   font-weight: bold;
   /* starts in top-left */
   border-radius: 10px 25px 10px 25px;
 }
 
 img {
-  display: inline-block;
+  display: block;
   margin: 0 auto;
   height: 110px;
   border-radius: 50%;
 }
 
 .bio-image-wrapper {
-  display: inline-block;
+  display: block;
   margin: 0 auto;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
+  background-image: url(../img/kitten_photo_2.jpg) center center no-repeat;
+  padding: 10px 0;
 }
 
 a {
