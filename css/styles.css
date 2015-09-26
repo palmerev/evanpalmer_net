@@ -5,20 +5,40 @@
   font-family: 'PT Sans', sans-serif;
 }
 
-header{
+.col-25-per {
+  width: 25%;
+}
+
+.col-50-per {
+  width: 50%;
+}
+
+.main-content {
+  /* width of header plus 15px */
+  padding-top: 87px;
+}
+
+header {
   background-color: #FFFFFF;
+  position: fixed;
+  width: 100%;
+}
+
+h1 {
+  display: block;
   padding: 15px;
 }
 
 .preamble {
-  background-color: #055068;
   height: 500px;
-  padding: 30px;
+}
+
+.main-content {
+  background-color: #055068;
 }
 
 main, aside {
   background: linear-gradient(to bottom right, #355555, #204050);
-  background-color: #355555;
   color: #DDD;
   border-width: 2px;
   border-style: solid;
@@ -48,7 +68,9 @@ aside > p {
   text-align: left;
   text-indent: 2em;
 }
+
 nav {
+  background-color: #055068;
   display: inline-block;
   width: 20%;
   min-width: 150px;
@@ -59,11 +81,12 @@ nav > div {
   padding: 15px 0px 15px 30px;
   margin-bottom: 10px;
   color: white;
-  background-color: #DDBF00;
+  background: linear-gradient(to top, #AF4400, #DDBF00);
   font-size: 1.25em;
   font-weight: bold;
   /* starts in top-left */
   border-radius: 10px 25px 10px 25px;
+  box-shadow: 2px 2px 5px #204050;
 }
 
 img {
@@ -77,10 +100,19 @@ img {
   display: block;
   margin: 0 auto;
   /*border: 1px solid red;*/
-  background-image: url(../img/kitten_photo_2.jpg) center center no-repeat;
-  padding: 10px 0;
+  padding-top: 15px;
 }
 
 a {
   text-decoration: none;
+}
+
+section > h2 {
+  margin: 10px auto;
+}
+
+.project-tile {
+  width: 50%;
+  margin: 15px auto;
+  border-top: 5px solid #DDBF00;
 }
