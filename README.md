@@ -1,2 +1,3 @@
 # evanpalmer_net
-Code for my personal website
+
+*This is being redesigned and will be rebuilt frequently over the next few iterations.*
