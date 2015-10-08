@@ -1,0 +1,13 @@
+{
+    "name": "evan/php_version",
+    "authors": [
+        {
+            "name": "Evan Palmer",
+            "email": "evjpalmer@gmail.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^1.17",
+        "slim/slim": "^2.6"
+    }
+}
