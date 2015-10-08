@@ -1,5 +1,10 @@
+@import url('//fonts.googleapis.com/css?family=PT+Sans');
+@import url('//fonts.googleapis.com/css?family=VT323');
+
 body {
   padding-top: 51px;
+  font-size: 2em;
+  font-family: 'PT Sans', sans-serif;
 }
 .text-center {
   padding-top: 20px;
@@ -53,6 +58,11 @@ body {
   }
 }
 
+.navbar-brand {
+  font-family: 'VT323'
+}
+
 footer {
+  font-size: 0.6em;
   text-align: center;
 }
