@@ -1,5 +1,5 @@
 body {
-  padding-top: 51px;  
+  padding-top: 51px;
 }
 .text-center {
   padding-top: 20px;
@@ -53,3 +53,6 @@ body {
   }
 }
 
+footer {
+  text-align: center;
+}
