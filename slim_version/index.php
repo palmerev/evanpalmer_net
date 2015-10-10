@@ -18,17 +18,12 @@ $view = $app->view();
 $view->parserOptions = array(
   'debug' => true
 );
-
 $view->parserExtensions = array(
   new \Slim\Views\TwigExtension(),
 );
 
 $app->get('/', function() use($app){
   $app->render('index.twig');
-});
-
-$app->get('/contact', function() use($app){
-  $app->render('contact.twig');
 });
 
 $app->run();

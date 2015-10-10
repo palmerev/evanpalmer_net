@@ -1,0 +1,42 @@
+{% extends 'base_default.twig' %}
+
+{% block title %}
+	Home
+{% endblock title %}
+
+{% block intro %}
+	<h2 id="intro">Hello! I'm Evan.</h2>
+	<p>
+		I'm a graduate of PDX Code Guild with a focus on mid-to-backend development. Among my favorite technologies are Python, Django, Javascript, relational databases (especially Postgres), and anything open-source. My days are often filled with finding ways to write code for good causes. I value breadth and versatility in my skillset and thrive on acquiring new skills and applying them to challenging problems.
+	</p>
+	<p>
+	  When I'm not programming or reading about programming, I'm usually cooking up glorious low-carb meals and/or singing Renaissance music. I'm a musician turned programmer-musician! Before focusing on software, I studied music education. Now I apply my creativity and problem-solving skills to code. Read a more detailed bio <a href="#bio-and-contact">here.</a>
+  </p>
+{% endblock intro %}
+
+{% block projects_desc %}
+	Here's some of my recent work. In a future version of this site, this will interface with the GitHub API to update based on work I've recently committed. For now, this content is static.
+{% endblock projects_desc %}
+
+{% block project1_title %}
+	IntraMusical
+{% endblock project1_title %}
+
+{% block project1_desc %}
+	This is an application that generates ear training exercises for musicians, to help them identify intervals. It uses a simple wrapper called "tones" around the Web Audio API to generate sound in the browser with Javascript. The backend was originally built with Django with Python 2.7. When it is redeployed, it'll be in Python 3! There will also be more content, including chord and scale identification, and personalized courses based on past result. This was my capstone project at PDX Code Guild. Now it is my capstone project for life.
+{% endblock project1_desc %}
+
+{% block project2_title %}
+	"Raise Effect" API
+{% endblock project2_title %}
+
+{% block project2_desc %}
+	This was my first project with the volunteers of Hack Oregon. I was one of the three backend developers who created the API serving a project called "Raise Effect", which showcases the effects of raising Oregon's minimum wage on different family types all 36 counties in Oregon. The API is built in Flask using Python 3, touching a PostgreSQL database deployed on AWS and served by gunicorn. I contributed to the design, implementation, and testing of the API and authored its documentation. This season's Hack Oregon projects go live on October 26th.
+{% endblock project2_desc %}
+
+{% block talks %}
+	<h2 id="sec2">Talks</h2>
+	<p>
+		I gave a talk at PyDX 2015 called "Making MIDI Music with Python: An Introduction to Music Theory". It went really well. You can find the slides and extra goodies from the talk <a href="https://github.com/palmerev/pydx15-music">on GitHub</a>.
+	</p>
+{% endblock talks %}

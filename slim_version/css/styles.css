@@ -1,0 +1,38 @@
+@import url('//fonts.googleapis.com/css?family=PT+Sans');
+@import url('//fonts.googleapis.com/css?family=VT323');
+
+body {
+	font-size: 2em;
+  font-family: 'PT Sans', sans-serif;
+	background-image: url("../images/marble-pattern-wide.jpg");
+	background-position: center;
+	}
+
+header {
+	margin-bottom:30px;
+}
+
+footer {
+	background-color: #f5f5f5;
+	margin-top: 1em;
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
+	font-size: 0.6em;
+}
+
+.main-content {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f5f5f5;
+}
+.navbar-brand {
+	font-family: 'VT323';
+}
+/* overrides bootstrap default */
+.col-md-3 {
+	padding-left: 0;
+}

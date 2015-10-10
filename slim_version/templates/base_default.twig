@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% block head %}
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>
+			{% block title %}
+			Bootstrap Sidebar
+			{% endblock title %}
+		</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+		{% endblock head %}
+	</head>
+	<body>
+
+<header class="navbar navbar-default navbar-static-top" role="banner">
+  <div class="container">
+    <!-- <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button> -->
+      <a href="#hello" class="navbar-brand">
+				while (true) { plan. make. test. refactor. document. deploy. }
+			</a>
+    </div>
+    <!-- <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+      </ul>
+    </nav> -->
+  </div>
+</header>
+
+<!-- Begin Body -->
+<div class="container">
+	<div class="row">
+  			<div class="col-md-3" id="leftCol">
+
+				<div class="well">
+              	<ul class="nav nav-stacked" id="sidebar">
+                  <li><a href="#hello">About</a></li>
+                  <li><a href="#talks">Talks</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#contact">Contact Me</a></li>
+              	</ul>
+  				</div>
+
+      		</div>
+      		<div class="col-xs-9 main-content">
+							{% block intro %}
+              	<h2 id="hello">Hello! I'm Evan.</h2>
+								<p>
+									paragraph 1
+								</p>
+								<p>
+									paragraph 2
+								</p>
+							{% endblock intro %}
+              	<h2 id="talks">Talks</h2>
+              	<p>
+									<h3>PyDX 2015</h3>
+							{% block talk_desc %}
+                	I gave a talk called "Making MIDI Music with Python: An Introduction to Music Theory". It went really well. You can find the slides and extra goodies from the talk <a href="https://github.com/palmerev/pydx15-music">on GitHub</a>.
+							{% endblock talk_desc %}
+              	</p>
+              	<h2 id="projects">Projects</h2>
+              	<p>
+									{% block projects_desc %}
+          					Stuff I'm working on.
+									{% endblock projects_desc %}
+              	</p>
+              	<div class="row">
+                  <div class="col-xs-6">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+												<h3>
+												{% block project1_title %}
+													Featured Project 1
+												{% endblock project1_title %}
+												</h3>
+											</div>
+                      <div class="panel-body">
+												<img src="{% block proj1_img_url %}//placehold.it/300x200{% endblock proj1_img_url %}" class="img-responsive center-block">
+											{% block project1_desc %}
+												This is about project 1. It's very nice. Lookioasdfiosadrj sijdorsdf asijdorj asdfjis iosjrfs sfijo aoij aio aoiasj sio jsaoi jasi jasoiersaoi hso iwso iasj ioasj oaisj aieo jaoiesrj saio jasfio as saoif asfhjakerfhaser iu ah asefasfiaefo jafasdrjn asdrg.
+											{% endblock project1_desc %}
+											</div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6">
+                      <div class="panel panel-default">
+                      <div class="panel-heading">
+												<h3>
+												{% block project2_title %}
+													Featured Project 2
+												{% endblock project2_title %}
+												</h3>
+											</div>
+                      <div class="panel-body">
+												<img src="{% block project2_img_url %}//placehold.it/300x200{% endblock project2_img_url %}" class="img-responsive center-block">
+												{% block project2_desc %}
+												This is about project 2. It's also very nice. Blahblahab dfesoij fjiwoef weofjiwef weoijawef  wjeiof jfew jiofwe joiwefj wfasdntrakjdskrljioaser oiasrsndkjrn saeriosjfsaer jisoerjsifdsae jsjer  ws e sei os jiso ijs oi  oisjeior sjeiofje se.
+												{% endblock project2_desc %}
+											</div>
+                    </div>
+                  </div>
+              	</div>
+							{% block contact %}
+              	<h2 id="contact">Contact Me</h2>
+								<p>
+									How to get in touch with me.
+								</p>
+							{% endblock contact %}
+      		</div>
+  	</div>
+</div>
+		<footer>
+			 <p>Built with Slim, Twig, and Bootstrap. Original site template courtesy of <a href="http://www.bootstrapzero.com/">bootstrapzero.com</a>, distributed under the <a href="https://opensource.org/licenses/MIT">MIT</a> license by <a href="http://www.bootply.com/templates">bootply.com</a>.</p>
+		</footer>
+
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
