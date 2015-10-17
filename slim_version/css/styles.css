@@ -55,7 +55,9 @@ nav li {
 	border-right: 1px solid #FFDD00;
 	border-collapse: collapse;
 }
-
+nav li:hover {
+	background-color: #DFDFDF;
+}
 /* FOOTER */
 footer {
 	background-color: #f5f5f5;
