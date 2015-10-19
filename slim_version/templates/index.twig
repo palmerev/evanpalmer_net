@@ -23,7 +23,9 @@
 {% endblock project1_title %}
 
 {% block project1_desc %}
-	This is an application that generates ear training exercises for musicians, to help them identify intervals. It uses a simple wrapper called "tones" around the Web Audio API to generate sound in the browser with Javascript. The backend was originally built with Django with Python 2.7. When it is redeployed, it'll be in Python 3! There will also be more content, including chord and scale identification, and personalized courses based on past result. This was my capstone project at PDX Code Guild. Now it is my capstone project for life.
+	<p>
+		This is an application that generates ear training exercises for musicians, to help them identify intervals. It uses a simple wrapper called "tones" around the Web Audio API to generate sound in the browser with Javascript. The backend was originally built with Django using Python 2.7. When it is redeployed, it'll be in Python 3! There will also be more course content options, including chord and scale identification, and personalized courses based on past results. This was my capstone project at PDX Code Guild.
+	</p>
 {% endblock project1_desc %}
 
 {% block project2_title %}
@@ -31,12 +33,26 @@
 {% endblock project2_title %}
 
 {% block project2_desc %}
-	This was my first project with the volunteers of Hack Oregon. I was one of the three backend developers who created the API serving a project called "Raise Effect", which showcases the effects of raising Oregon's minimum wage on different family types all 36 counties in Oregon. The API is built in Flask using Python 3, touching a PostgreSQL database deployed on AWS and served by gunicorn. I contributed to the design, implementation, and testing of the API and authored its documentation. This season's Hack Oregon projects go live on October 26th.
+	<p>
+		This was my first project with the volunteers of <a href="http://www.hackoregon.org">Hack Oregon</a>. I was one of the three backend developers who created the API serving a project called "Raise Effect", which showcases the effects of raising Oregon's minimum wage on different family types all 36 counties in Oregon. The API is built in Flask using Python 3, touching a PostgreSQL database deployed on AWS and served by gunicorn. I helped design and implement the API itself, contributed a large portion of the unit tests, and authored its documentation. This season's Hack Oregon projects go live on October 26th. You can see Raise Effect in action <a href="http://raiseeffect.org">here</a>.
+	</p>
 {% endblock project2_desc %}
 
 {% block talks %}
 	<h2 id="sec2">Talks</h2>
 	<p>
-		I gave a talk at PyDX 2015 called "Making MIDI Music with Python: An Introduction to Music Theory". It went really well. You can find the slides and extra goodies from the talk <a href="https://github.com/palmerev/pydx15-music">on GitHub</a>.
+		I gave a talk at PyDX 2015 called "Making MIDI Music with Python: An Introduction to Music Theory". You can find the slides and extra goodies from the talk <a href="https://github.com/palmerev/pydx15-music">on GitHub</a>.
 	</p>
 {% endblock talks %}
+
+{% block contact %}
+	<h2>Contact Me</h2>
+	<p>
+		I'd love to hear from you! You can contact me directly by email or find me online.
+	</p>
+	<ul class="icons">
+		<li><a href="https://www.linkedin.com/in/evanpalmer1" class="fa fa-linkedin"></a></li>
+		<li><a href="https://twitter.com/__evanpalmer__" class="fa fa-twitter"></a></li>
+		<li><a href="https://github.com/palmerev" class="fa fa-github"></a></li>
+	</ul>
+{% endblock contact %}

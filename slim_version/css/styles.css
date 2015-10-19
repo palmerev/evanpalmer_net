@@ -20,6 +20,13 @@ a {
 	text-decoration: none;
 }
 
+li {
+	list-style: none;
+}
+
+p {
+	text-indent: 2em;
+}
 /* HEADER */
 header {
 	position: fixed;
@@ -49,7 +56,6 @@ nav a {
 	text-align: center;
 }
 nav li {
-	list-style: none;
 	padding: 0 25px 0 25px;
 	border-left: 1px solid #FFDD00;
 	border-right: 1px solid #FFDD00;
@@ -121,6 +127,19 @@ section::before {
 
 section.intro::before {
 	display: none;
+}
+
+ul.icons li {
+	display: inline-block;
+	margin: 0 15px;
+}
+
+ul.icons li a {
+	color: #666;
+}
+
+ul.icons li a:hover {
+	color: #000;
 }
 
 h1 {
